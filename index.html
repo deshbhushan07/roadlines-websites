@@ -1,28 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Deshbhushan Roadlines</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+    header { background: #0d47a1; color: white; padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 3em; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    h2 { color: #0d47a1; margin-bottom: 20px; }
+    .services, .why-choose { display: flex; flex-wrap: wrap; gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); flex: 1 1 250px; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    .contact-form button { background: #0d47a1; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    .contact-form button:hover { background: #003c8f; }
+    iframe { width: 100%; height: 300px; border: none; margin-top: 20px; border-radius: 10px; }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+    footer {
+      background: #0d47a1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Deshbhushan Transport Services</h1>
-    <p>Local transportation up to 10 tons</p>
+    <h1>Deshbhushan Roadlines</h1>
+    <p>Reliable Transport Services Near Five Star MIDC, Kolhapur</p>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <h2>Welcome to Our Roadlines</h2>
-    <p>We provide local transport service with two 10-ton trucks covering Sangavdewadi and MIDC areas.</p>
-  </main>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Local Transportation</h3>
+        <p>We provide quick and reliable local transport for businesses and industries.</p>
+      </div>
+      <div class="card">
+        <h3>Truck Rental</h3>
+        <p>Two 10-ton trucks available: 22 ft and 19 ft body lengths, ready for transport needs.</p>
+      </div>
+      <div class="card">
+        <h3>Industrial Logistics</h3>
+        <p>Specialized support for Five Star MIDC and nearby manufacturing units.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Choose Us?</h2>
+    <div class="why-choose">
+      <div class="card">
+        <h3>On-Time Delivery</h3>
+        <p>Punctual, committed, and efficient transport service, every time.</p>
+      </div>
+      <div class="card">
+        <h3>Experienced Drivers</h3>
+        <p>Professional and well-trained drivers ensure safety and reliability.</p>
+      </div>
+      <div class="card">
+        <h3>Trusted by Businesses</h3>
+        <p>Serving local industries with trust and integrity for years.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- 🌍 Google Map Embed -->
+    <iframe
+      src="https://maps.google.com/maps?q=Sangavdewadi%20MIDC&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      allowfullscreen
+    ></iframe>
+  </section>
+
+  <!-- 💬 WhatsApp Floating Button -->
+  <a class="whatsapp-btn" href="https://wa.me/917397849730" target="_blank" title="Chat on WhatsApp">💬</a>
+
   <footer>
-    <p>📍 Sangavdewadi Near Five Star MIDC | 📞 +91-XXXXXXXXXX</p>
+    <p>Deshbhushan Roadlines, Sangavdewadi, Kolhapur | 📞 9860412709</p>
+    <p>© 2025 All rights reserved</p>
   </footer>
+
 </body>
 </html>
