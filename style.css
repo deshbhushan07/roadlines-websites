@@ -16,7 +16,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  background-color: #002244;; /* Or match your design */
+  background-color: white; /* Or match your design */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
