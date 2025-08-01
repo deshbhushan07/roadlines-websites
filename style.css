@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #111;
+}
+
+/* Navbar */
 .navbar {
   background-color: #002244; /* Dark Blue */
   color: white;
@@ -7,8 +15,6 @@
   align-items: center;
   position: fixed;
   top: 0;
-  width: 100%; /* Full-width navbar */
-  z-index: 1000; /* So it stays on top */
 }
 
 .logo-container {
@@ -18,26 +24,52 @@
 
 .logo-img {
   height: 40px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .brand-title {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: white;
-}
-
-.nav-links {
-  display: flex;
-  gap: 25px;
 }
 
 .nav-links a {
   color: white;
+  margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-banner {
+  background: linear-gradient(to right, #005f73, #0a9396); /* Teal shades */
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* General Section */
+.section {
+  padding: 40px 30px;
+  border-top: 2px solid #ddd;
+}
+
+/* Footer */
+.footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
 }
