@@ -11,6 +11,7 @@ body {
   background-color: #002244; /* Dark Blue */
   top:0;
   left:0;
+  right: 0; 
   z-index:1000;
   width:100%;
   color: white;
