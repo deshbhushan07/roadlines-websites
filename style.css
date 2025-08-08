@@ -1,10 +1,28 @@
+/* Navbar */
+.navbar {
+  background-color: #002244;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* ✅ Make sure this line is added */
+  z-index: 1000;
+  width: 100%;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Body should start below the navbar */
 body {
   margin: 0;
-  padding:0;
+  padding-top: 80px; /* ✅ Adjust this padding based on navbar height */
   font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
   color: #111;
 }
+
 
 /* Navbar */
 .navbar {
