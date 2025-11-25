@@ -15,6 +15,25 @@
   box-sizing: border-box;
 }
 
+#about p,
+#about ul,
+#about li,
+#about h3 {
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 1.6;
+}
+
+#about ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 20px; /* Proper bullet alignment */
+}
+
+#about li {
+  margin-bottom: 6px;
+}
+
 
 /* Body should start below the navbar */
 body {
