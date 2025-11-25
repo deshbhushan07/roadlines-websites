@@ -53,19 +53,95 @@ body {
 }
 
 /* Hero Section */
+/* HERO — VRL-like layout */
 .hero-banner {
-  background: linear-gradient(to right, #005f73, #0a9396); /* Teal shades */
-  color: white;
-  padding: 60px 30px;
+  background: linear-gradient(90deg, rgba(0,34,68,0.85), rgba(0,94,115,0.75));
+  color: #fff;
+  padding: 70px 20px;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1 1 540px;
+  min-width: 300px;
+}
+
+.hero-right {
+  flex: 0 0 260px;
   text-align: center;
 }
 
-.hero-text h1 {
-  font-size: 2.5rem;
+.hero-logo {
+  max-width: 240px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  padding: 12px;
 }
 
-.hero-text p {
-  font-size: 1.2rem;
+/* Text */
+.hero-title {
+  font-size: 3.2rem;         /* very large heading */
+  margin: 0 0 10px 0;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.hero-sub {
+  margin: 0 0 15px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffe08a;            /* accent */
+}
+
+.hero-desc {
+  margin: 0 0 22px 0;
+  font-size: 1rem;
+  color: #eaf6f6;
+}
+
+/* Vehicle buttons (yellow boxes) */
+.vehicle-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.vehicle-btn {
+  background: #ffd200;       /* bright yellow */
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.vehicle-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .hero-title { font-size: 2.2rem; }
+  .hero-right { margin-top: 20px; }
+}
+
+@media (max-width: 520px) {
+  .hero-inner { padding: 10px; }
+  .vehicle-btn { flex: 1 1 100%; text-align:center; }
 }
 
 /* General Section */
